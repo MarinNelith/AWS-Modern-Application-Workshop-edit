@@ -51,7 +51,7 @@
                     "connectionId": "w6cezn",
                     "httpMethod": "GET",
                     "type": "HTTP_PROXY",
-                    "uri": "http://mysfits-nlb-27103807def1b700.elb.eu-west-1.amazonaws.com/"
+                    "uri": "http://mysfits-nlb-27103807def1b700.elb.eu-west-1.amazonaws.com/api"
                 }
             },
             "options": {
@@ -126,7 +126,7 @@
                     "connectionId": "w6cezn",
                     "httpMethod": "GET",
                     "type": "HTTP_PROXY",
-                    "uri": "http://mysfits-nlb-27103807def1b700.elb.eu-west-1.amazonaws.com/mysfits",
+                    "uri": "http://mysfits-nlb-27103807def1b700.elb.eu-west-1.amazonaws.com/api/mysfits",
                     "responses": {
                         "default": {
                             "statusCode": "200",
@@ -220,7 +220,7 @@
                     "connectionId": "w6cezn",
                     "httpMethod": "GET",
                     "type": "HTTP_PROXY",
-                    "uri": "http://mysfits-nlb-27103807def1b700.elb.eu-west-1.amazonaws.com/mysfits/{mysfitId}",
+                    "uri": "http://mysfits-nlb-27103807def1b700.elb.eu-west-1.amazonaws.com/api/mysfits/{mysfitId}",
                     "responses": {
                         "default": {
                             "statusCode": "200",
@@ -319,7 +319,7 @@
                     "connectionId": "w6cezn",
                     "httpMethod": "POST",
                     "type": "HTTP_PROXY",
-                    "uri": "http://mysfits-nlb-27103807def1b700.elb.eu-west-1.amazonaws.com/mysfits/{mysfitId}/adopt",
+                    "uri": "http://mysfits-nlb-27103807def1b700.elb.eu-west-1.amazonaws.com/api/mysfits/{mysfitId}/adopt",
                     "responses": {
                         "default": {
                             "statusCode": "200",
@@ -433,7 +433,7 @@
                         ]
                     }],
                     "type": "HTTP_PROXY",
-                    "uri": "http://mysfits-nlb-27103807def1b700.elb.eu-west-1.amazonaws.com/mysfits/{mysfitId}/like",
+                    "uri": "http://mysfits-nlb-27103807def1b700.elb.eu-west-1.amazonaws.com/api/mysfits/{mysfitId}/like",
                     "responses": {
                         "default": {
                             "statusCode": "200",

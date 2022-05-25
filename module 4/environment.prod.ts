@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  mysfitsApiUrl: 'https://rsqvv9hx29.execute-api.eu-west-1.amazonaws.com/prod/api',
+  mysfitsApiUrl: 'https://g3itiv2lg5.execute-api.eu-west-1.amazonaws.com/prod',
   categories: [
     {
       title: "Good/Evil",
