@@ -1,0 +1,38 @@
+{
+  "Statement": [
+    {
+      "Sid": "WhitelistedGet",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::372124793268:role/MythicalMysfitsServiceCodeBuildServiceRole",
+          "arn:aws:iam::372124793268:role/MythicalMysfitsServiceCodePipelineServiceRole"
+        ]
+      },
+      "Action": [
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "s3:GetBucketVersioning"
+      ],
+      "Resource": [
+        "arn:aws:s3:::mythical-mysfits-artifacts-pignarrm/*",
+        "arn:aws:s3:::mythical-mysfits-artifacts-pignarrm"
+      ]
+    },
+    {
+      "Sid": "WhitelistedPut",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::372124793268:role/MythicalMysfitsServiceCodeBuildServiceRole",
+          "arn:aws:iam::372124793268:role/MythicalMysfitsServiceCodePipelineServiceRole"
+        ]
+      },
+      "Action": "s3:PutObject",
+      "Resource": [
+        "arn:aws:s3:::mythical-mysfits-artifacts-pignarrm/*",
+        "arn:aws:s3:::mythical-mysfits-artifacts-pignarrm"
+      ]
+    }
+  ]
+}
